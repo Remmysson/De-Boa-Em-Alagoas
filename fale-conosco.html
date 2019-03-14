@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<title>De boa em Alagoas</title>
+		<link rel="stylesheet" type="text/css" href="_css/estilo.css"/>
+		<script type="text/javascript" src="_javascript/enquete.js"></script>
+		<script type="text/javascript" src="_javascript/contato.js"></script>
+		<meta charset="utf-8" />
+		<meta name="author" content="Remmysson Kristhyan"/>
+		<meta name="description" content="Projeto para a disciplina de Internet e Web do curso de Ciência da Computação - UFAL"/>
+	</head>
+	<body>
+		<div id="interface">
+			<header id="cabecalho">
+				<nav id="menu">
+					<h1>Menu Principal</h1>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="pontos-turisticos.html">Pontos Turísticos</a></li>
+						<li><a href="cultura.html">Cultura</a></li>
+						<li><a href="gastronomia.html">Gastronomia</a></li>
+						<li><a href="fotos.html">Fotos</a></li>
+						<li><a href="fale-conosco.html">Fale conosco</a></li>
+					</ul>
+				</nav>
+
+				<img src="_imagens/Topo.jpg"/>
+			</header>
+
+			<div id="corpo">
+				<div id="enquete">
+					<h1>Qual a praia mais bonita de Alagoas?</h1>
+					<form>
+					<table>
+						<tr>
+							<td><input type="radio" name="praia" value="gunga" /></td>
+							<td>Praia do Gunga</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="frances" /></td>
+							<td>Praia do Francês</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="pajucara" /></td>
+							<td>Pajuçara</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="ponta verde" /></td>
+							<td>Ponta Verde</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="ipioca" /></td>
+							<td>Ipioca</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="maragogi" /></td>
+							<td>Maragogi</td>
+						</tr>
+						<tr>
+							<td><input type="radio" name="praia" value="outra" /></td>
+							<td>Outra</td>
+						</tr>
+					</table>
+					<button type="button"> Votar </button>
+					</form> 
+				</div>
+
+				<div id="texto">
+					<form name="meu_form">
+        				<h1>Entre em contato</h1>
+
+        				<p class="nome">
+			            	<input type="text" id="nomeid" placeholder="José da Silva" required="required" name="nome" />
+            				<label for="nome">Nome</label>
+            			</p>
+        
+        				<p class="fone">
+            				<input type="text" id="foneid" placeholder="(xx)xxxx-xxxx" name="fone" />
+            				<label for="fone">Fone</label>
+        				</p>
+        
+        				<p>
+				            <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+				            <label for="email">Email</label>
+				        </p>
+        
+        				<p>
+							<textarea placeholder="Deixe sua opnião"></textarea>
+        				</p>
+        
+        				<p class="submit">
+            				<input type="submit" onclick="Enviar();" value="Enviar" />
+        				</p>
+    				</form>
+				</div>
+			</div>
+			<footer id="rodape">
+				<p>Copyright &copy; 2016 - by Remmysson Kristhyan</p>
+			</footer>
+		</div>
+	</body>
+</html>
